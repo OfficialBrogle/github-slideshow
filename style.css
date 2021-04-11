@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* All page */
+
+.allpage {
+    background: linear-gradient(rgb(30, 82, 30), rgb(84, 122, 84));
+    height: 100vh;
+    ;
+}
+
+
+/*Playground*/
+
+.playground {
+    width: 80%;
+    height: 80%;
+    background: rgba(142, 155, 142, 0.473);
+    position: absolute;
+    top: 10%;
+    left: 10%
+}
+
+
+/*Score*/
+
+.totalscore {
+    font-size: 30px;
+    color: wheat;
+    font-weight: 700;
+}
+
+.totalscore p:nth-of-type(2)
+/*druhý prvek p od totalscore*/
+
+{
+    font-size: 40px;
+    text-align: center
+}
+
+.totalscore0 {
+    position: absolute;
+    top: 15%;
+    left: 10%;
+}
+
+.totalscore1 {
+    position: absolute;
+    top: 15%;
+    right: 10%;
+}
+
+/* Current score */
+.currentscore{
+    width: 150px;
+    height: 150px;
+    background-color: rgb(84, 122, 84);
+}
+
+.currentscore p{
+    font-size:20px;
+    color:white;
+    text-align:center;
+    padding-top: 20px;
+}
+
+.currentscore p:nth-child(2){
+    font-size: 40px;
+
+}
+
+.currentscore0{
+    position:absolute;
+    top: 45%;
+    left: 11.5%;
+
+}
+
+.currentscore1{
+  position:absolute;
+    top: 45%;
+    right: 11.5%;
+    
+}
+
+/* Middle text */
+.middletext{
+    position: absolute;
+    top: 65%;
+    left: 40%;
+    text-align:center;
+    margin-top:10px;
+    font-size:25px;
+    color:white;
+        left: 50%;
+    margin-left: -83px;
+}
+
+.btn{
+    border: 2px solid grey;
+    padding: 5px 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    background-color: grey;
+    
+}
+
+.btn:hover {
+    background-color: darkgrey;
+    cursor:pointer;
+}
+
+/* DICE */
+.dice{
+    position:absolute;
+    left: 50%;
+    margin-left:-62.5px;
+    top: 25%;
+}
