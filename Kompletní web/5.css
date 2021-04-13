@@ -1,0 +1,354 @@
+    body {
+        width: 960px;
+        margin: 0 auto;
+        background: rgb(201, 201, 201) url("../Pokemoni/dú4/background.png") center top no-repeat;
+        color: #222;
+        font: 18px/30px Georgia, serif;
+        -webkit-font-smoothing: antialiased;
+        padding: 0 20px;
+        /*padding se dává kvůli zmenšování stránky a textu, aby se nelepil na hrany*/
+    }
+    
+     ::selection {
+        /*když označím stránku, bude vidět zeleně*/
+        background: rgb(133, 172, 133);
+        color: rgb(20, 82, 20);
+        text-shadow: none;
+    }
+    
+     :-moz-selection {
+        background: rgb(133, 172, 133);
+        color: rgb(20, 82, 20);
+        text-shadow: none;
+    }
+    
+    h1,
+    h2,
+    h3 {
+        font-family: "open sans", sans-serif;
+    }
+    
+    a {
+        color: #2453c3;
+        text-decoration: none;
+    }
+    
+    a:hover,
+    a:focus {
+        text-decoration: underline;
+    }
+    
+    .logo {
+        margin-top: 57px;
+        position: relative;
+    }
+    
+    p {
+        margin: 0 0 24px 0;
+    }
+    
+    .logo a {
+        background: url("../Pokemoni/dú4/mojelogo.png") center top no-repeat;
+        display: block;
+        width: 960px;
+        height: 211px;
+        text-indent: -9999px;
+        margin-left: 0;
+        max-width: -webkit-fill-available;
+    }
+    
+    .cover {
+        margin-top: -225px;
+        margin-bottom: 193px;
+    }
+    
+    .badge {
+        background: rgb(255 255 255 / 7%);
+        display: block;
+        height: 202px;
+        width: 635px;
+        margin-left: 178px;
+    }
+    
+    .post-header {
+        text-align: center;
+    }
+    
+    .post-meta {
+        font-style: italic;
+        margin-top: 16px;
+        color: aquamarine
+    }
+    
+    .autor {
+        font-family: 'open sans', sans-serif;
+        font-style: normal;
+        font-weight: 800;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: aquamarine;
+    }
+    
+    .post-meta time:before {
+        content: "·";
+        font-style: normal;
+    }
+    
+    .post-title {
+        font-size: 58px;
+        line-height: 56px;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 800;
+        letter-spacing: 1px;
+        margin: 0 0 5px 0;
+        color: #091e0c;
+    }
+    
+    .post-content p,
+    h2,
+    h3 {
+        margin-left: 130px;
+        margin-right: 130px;
+    }
+    
+    .post-content h3 {
+        font-size: 18px;
+        line-height: 28px;
+        color: rgb(141, 78, 78);
+        margin-top: 36px;
+        margin-bottom: 12px;
+    }
+    
+    .post-content h2 {
+        margin-top: 50px;
+        margin-bottom: 5px;
+        font-size: 28px;
+        color: rgb(20, 82, 20);
+        text-transform: uppercase;
+    }
+    
+    .post-content h2:first-of-type {
+        text-align: center;
+    }
+    
+    .post-content p:first-child {
+        font-size: 24px;
+        line-height: 36px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    .float-left {
+        float: left;
+    }
+    
+    .float-right {
+        float: right;
+    }
+    
+    .pullquote {
+        color: rgb(112, 112, 112);
+        max-width: 300px;
+    }
+    
+    .pullquote.float-left {
+        margin: 24px 34px 24px 0;
+    }
+    
+    .pullquote.float-right {
+        margin: 24px 0 24px 34px;
+    }
+    
+    .pullquote q {
+        font-size: 24px;
+        line-height: 36px;
+        font-style: italic;
+    }
+    
+    .pullquote ol,
+    ul {
+        list-style: none;
+        padding-left: 0;
+    }
+    
+    .pullquote li {
+        border-bottom: 1px dotted #aaa;
+        padding: 2px 3px;
+    }
+    
+    .pullquote li:last-child {
+        border: none
+    }
+    
+    .post-footer {
+        width: 700px;
+        margin: 60px auto;
+        background: #a8a6a63d;
+        z-index: 10;
+        position: relative;
+        left: 50%;
+        margin-left: -350px;
+        /*půlka z width*/
+        border-radius: 34px;
+        padding: 10px;
+    }
+    
+    .post-footer:hover {
+        background: #696868af;
+    }
+    
+    .post-footer h3 {
+        font-size: 18px;
+    }
+    
+    .post-footer>h3 {
+        /*vybere jen ty h3 elementy, které jsou přímým potomkem post-footer*/
+        text-align: center;
+    }
+    
+    .photo {
+        float: left;
+    }
+    
+    .photo img {
+        border-radius: 50%;
+        border: 10px solid rgb(235, 234, 181);
+        margin-top: 10px;
+    }
+    
+    .byline h3,
+    .byline p {
+        font-size: 14px;
+        line-height: 24px;
+        margin-left: 160px;
+    }
+    
+    .byline h3 a {
+        color: rgb(31, 99, 31)
+    }
+    
+    .pre-footer {
+        border-top: 1px solid rgb(31, 99, 31);
+        border-bottom: 1px solid rgb(31, 99, 31);
+    }
+    
+    .reviews {
+        list-style: none;
+        padding-left: 0;
+        overflow: hidden;
+    }
+    
+    .reviews li {
+        float: left;
+        font-size: 14px;
+        line-height: 24px;
+        width: 220px;
+        margin-left: 83px;
+        margin-right: 10px;
+        position: relative;
+    }
+    
+    .reviews li:before {
+        content: '"';
+        color: rgb(31, 99, 31);
+        font-size: 60px;
+        font-style: italic;
+        position: absolute;
+        top: 20px;
+        left: 0;
+        font-family: sans-serif
+    }
+    
+    .reviews blockquote {
+        font-style: italic;
+    }
+    
+    .review-byline {
+        font-weight: bold;
+        padding-left: 30px;
+        margin-bottom: 8px;
+    }
+    
+    .review-byline:before {
+        content: "- ";
+        color: rgb(31, 99, 31);
+        margin-right: 5px;
+    }
+    
+    .global-footer {
+        color: #787878;
+        font-size: 14px;
+        text-align: right;
+        padding: 15px;
+    }
+    
+    .group::before,
+    .group:after {
+        content: " ";
+        display: table;
+    }
+    
+    .group:after {
+        clear: both;
+    }
+    
+    .group {
+        *zoom: 1;
+    }
+    
+    header code {
+        background: red;
+    }
+    
+    footer code {
+        background: black;
+    }
+    
+    aside code {
+        background: #d6d23d
+    }
+    
+    code {
+        color: #fff;
+        background: #9f3fa3;
+        display: block;
+        padding: 25px;
+        font: 14px/18px Monaco, Consolas, "lucida console", monosplace;
+        border-radius: 6px;
+        text-align: center;
+    }
+    
+    #wrapper {
+        width: 700px;
+        margin: 0 auto;
+        position: relative;
+    }
+    
+    #wrapper header,
+    #wrapper section,
+    #wrapper aside,
+    #wrapper footer {
+        margin: 0 0 25px;
+        opacity: 0.8;
+    }
+    
+    #wrapper section {
+        float: left;
+        width: 425px;
+        position: relative;
+        bottom: 70px;
+        z-index: 2;
+    }
+    
+    #wrapper aside {
+        float: right;
+        width: 250px;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        z-index: 1;
+    }
+    
+    .color {
+        background-color: #9f3fa3
+    }
