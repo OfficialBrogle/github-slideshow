@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box/*width+padding+border*/
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+
+/*pokud budu v budoucnu měnit border-box, tak abych mohla hodnotu dát jen rodičovi, ne všem zvlášť*/
+
+body {
+    padding: 25px;
+    background: #f7f6d3
+}
+
+
+/*layout*/
+
+.wrap {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+section {
+    color: white;
+    font: 16px/22px Rockwell, "Courier bold", Courier, Georgia, serif;
+    border-radius: 9px;
+    margin-bottom: 25px;
+    margin-right: 1%;
+    float: left;
+    width: 19.2%;
+    min-height: 300px;
+    padding: 20px;
+}
+
+section:nth-child(1) {
+    background: rgb(32, 165, 158)
+}
+
+section:nth-child(2) {
+    background: rgb(36, 46, 192)
+}
+
+section:nth-child(3) {
+    background: rgb(229, 0, 250)
+}
+
+section:nth-child(4) {
+    background: rgb(32, 178, 39)
+}
+
+section:nth-child(5) {
+    background: rgb(181, 206, 41);
+    margin-right: 0;
+}
+
+
+/*clearfix*/
+
+.group:before,
+.group:after {
+    content: " ";
+    display: table;
+}
+
+.group:after {
+    clear: both;
+}
